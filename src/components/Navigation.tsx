@@ -24,44 +24,43 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-card/80 backdrop-blur-xl shadow-soft border-b border-border/50" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-card/95 backdrop-blur-md shadow-card" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-            <span className="text-2xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Advisory
-            </span>
+          <div className="text-2xl font-bold text-primary">
+            Advisory Partners
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("services")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors"
             >
-              Features
+              Services
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors"
             >
-              Reviews
+              Testimonials
             </button>
-            <Button className="gradient-vibrant shadow-lg hover:shadow-glow hover:scale-105 transition-all duration-300 font-semibold">
-              Get Started
-            </Button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Contact
+            </button>
+            <Button>Schedule Consultation</Button>
           </div>
 
           {/* Mobile Menu Button */}

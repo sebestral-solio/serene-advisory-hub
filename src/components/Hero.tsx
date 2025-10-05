@@ -54,59 +54,37 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 py-32">
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 text-sm font-medium text-foreground animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            Now Accepting New Clients
-          </div>
-
-          <h1 className="text-6xl md:text-8xl font-extrabold text-foreground leading-[0.9] animate-in fade-in slide-in-from-bottom-4 duration-700 delay-75">
-            Transform Your
-            <br />
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Advisory Experience
-            </span>
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
+            Your Trusted Partner in{" "}
+            <span className="text-primary">Professional Advice</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-medium animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
-            Next-gen platform combining AI-powered insights with personalized human expertise. Book consultations in seconds, track progress in real-time.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+            Personalized guidance and seamless meeting management, delivered with care and professionalism
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
             <Button 
               size="lg" 
-              className="text-lg px-10 py-7 gradient-vibrant shadow-glow hover:scale-105 transition-transform duration-300 font-semibold"
+              className="text-lg px-8 py-6 shadow-soft"
               onClick={() => scrollToSection("contact")}
             >
-              Start Free Trial
+              Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
               size="lg" 
-              className="text-lg px-10 py-7 glass border-2 border-primary/30 hover:border-primary/50 hover:scale-105 transition-all duration-300 font-semibold"
+              variant="outline" 
+              className="text-lg px-8 py-6"
               onClick={() => scrollToSection("services")}
             >
-              Watch Demo
+              Learn More
             </Button>
           </div>
 
-          <div className="flex items-center justify-center gap-8 pt-8 text-sm text-muted-foreground animate-in fade-in duration-700 delay-500">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">🔒</span>
-              <span className="font-medium">Bank-Level Security</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">⚡</span>
-              <span className="font-medium">Instant Setup</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">✨</span>
-              <span className="font-medium">AI-Powered</span>
-            </div>
+          <div className="pt-8 text-sm text-muted-foreground animate-in fade-in duration-700 delay-500">
+            <p>🔒 Confidential • Professional • Personalized</p>
           </div>
         </div>
       </div>
